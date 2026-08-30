@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://dbtcwckr5alix"]
+
+[ext_resource type="Script" uid="uid://lqbwxkcdoul6" path="res://main_menu.gd" id="1_28flt"]
+
+[node name="MainMenu" type="Control" unique_id=771983332]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_28flt")
+
+[node name="Background" type="ColorRect" parent="." unique_id=784161058]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1430412692]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="MenuVBox" type="VBoxContainer" parent="." unique_id=1088500143]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BtnPlay" type="Button" parent="MenuVBox" unique_id=1764051943]
+layout_mode = 2
+text = "BtnPlay"
+
+[node name="BtnHelp" type="Button" parent="MenuVBox" unique_id=250227920]
+layout_mode = 2
+text = "BtnHelp"
+
+[node name="BtnQuit" type="Button" parent="MenuVBox" unique_id=248888739]
+layout_mode = 2
+text = "BtnQuit"
+
+[node name="HelpPanel" type="Panel" parent="." unique_id=1098847065]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HelpText" type="RichTextLabel" parent="HelpPanel" unique_id=1202523173]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "[center][b][font_size=22][color=#FFD700]HƯỚNG DẪN TRÒ CHƠI[/color][/font_size][/b][/center]
+
+[b][color=#4DEEEA]1. MỤC TIÊU[/color][/b]
+• Khám phá các khu vực trên bản đồ Overworld.
+• Vượt qua các màn chơi và hoàn thành minigame.
+• Thu thập vật phẩm và đạt điểm số cao nhất.
+
+[b][color=#4DEEEA]2. PHÍM ĐIỀU KHIỂN[/color][/b]
+• [b]WASD / Mũi tên:[/b] Di chuyển nhân vật.
+• [b]Space / E:[/b] Tương tác với NPC / Nhặt vật phẩm.
+• [b]ESC / P:[/b] Tạm dừng game.
+
+[b][color=#4DEEEA]3. MẸO CHƠI[/color][/b]
+• Đọc kỹ yêu cầu trước khi bước vào minigame.
+• Tiến trình sẽ tự động lưu sau khi hoàn thành mỗi màn."
+
+[node name="BtnCloseHelp" type="Button" parent="HelpPanel" unique_id=922678864]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

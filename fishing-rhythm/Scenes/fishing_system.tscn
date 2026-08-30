@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dfmlmhcfayujf"]
+
+[ext_resource type="Script" uid="uid://e8m3jge73d3" path="res://fishing_system.gd" id="1_5mgbu"]
+
+[node name="FishingSystem" type="Node2D" unique_id=702135359]
+script = ExtResource("1_5mgbu")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1075208653]
+
+[node name="Bobber" type="Marker2D" parent="." unique_id=944114347]
+
+[node name="BiteIndicator" type="Label" parent="." unique_id=1357795348]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BiteTimer" type="Timer" parent="." unique_id=1622321440]

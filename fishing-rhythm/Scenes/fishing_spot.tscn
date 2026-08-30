@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cs8c3pcippub1"]
+
+[ext_resource type="Script" uid="uid://dk7feg8nsxtqi" path="res://fishing_spot.gd" id="1_sebeb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wsd"]
+size = Vector2(279, 3262)
+
+[node name="FishingSpot" type="Area2D" unique_id=2085588231]
+script = ExtResource("1_sebeb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2121293063]
+position = Vector2(10.5, 81)
+shape = SubResource("RectangleShape2D_s7wsd")
+
+[node name="PromptLabel" type="Label" parent="." unique_id=864301650]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
